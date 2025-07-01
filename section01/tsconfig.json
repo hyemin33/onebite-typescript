@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    // 컴파일 작성 코드를 다른 폴더로 분리
+    "outDir" : "dist",
+    // true: 엄격하게 검사
+    "strict" : true,
+    // typescript가 각각의 파일을 어떤 모듈로 감지할 것인가
+    "moduleDetection": "force",
+    "skipLibCheck": true,
+  },
+  "ts-node": {
+    "esm": true
+  },
+  // tsc 명령 시, src 경로 아래 모든 파일 컴파일
+  "include": ["src"]
+}
